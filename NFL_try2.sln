@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFL_try2", "NFL_try2\NFL_try2.csproj", "{153C8F6A-BF1F-4360-B5A5-EF5898C5B6CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{153C8F6A-BF1F-4360-B5A5-EF5898C5B6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153C8F6A-BF1F-4360-B5A5-EF5898C5B6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153C8F6A-BF1F-4360-B5A5-EF5898C5B6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153C8F6A-BF1F-4360-B5A5-EF5898C5B6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EDCFB7D-85A9-45A1-AF3E-51AD53948A38}
+	EndGlobalSection
+EndGlobal

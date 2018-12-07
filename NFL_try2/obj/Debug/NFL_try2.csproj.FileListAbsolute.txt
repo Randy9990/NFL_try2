@@ -1,0 +1,8 @@
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\bin\Debug\NFL_try2.exe.config
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\bin\Debug\NFL_try2.exe
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\bin\Debug\NFL_try2.pdb
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\obj\Debug\NFL_try2.csprojAssemblyReference.cache
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\obj\Debug\NFL_try2.csproj.ResolveComReference.cache
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\obj\Debug\NFL_try2.csproj.CoreCompileInputs.cache
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\obj\Debug\NFL_try2.exe
+C:\Users\randy.mccombs\source\repos\NFL_try2\NFL_try2\obj\Debug\NFL_try2.pdb
