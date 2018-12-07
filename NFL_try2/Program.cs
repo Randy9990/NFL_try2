@@ -17,14 +17,12 @@ namespace NFL_try2
 
         static void Main(string[] args)
         {
-            //var watch = System.Diagnostics.Stopwatch.StartNew();
-            DateTime start = DateTime.Now;
+           DateTime start = DateTime.Now;
 
             MyApp = new Excel.Application
             {
                 Visible = false
             };
-            //string XLS_PATH = "C:\\Users\\randy.mccombs\\source\\repos\\NFL_try2\\NFL_try2\\NFL_Small_Set_100.xlsx";
             string XLS_PATH = "C:\\Users\\randy.mccombs\\source\\repos\\NFL_try2\\NFL_try2\\NFL_Small_Set.xlsx";
 
             MyBook = MyApp.Workbooks.Open(XLS_PATH);
@@ -47,15 +45,9 @@ namespace NFL_try2
                     currentrow.PassingYards = xlRange.Cells.Value2[x, 11];
                     currentrow.RushingYards = xlRange.Cells.Value2[x, 15];
                     currentrow.Position = xlRange.Cells.Value2[x, 22].ToString();
-                    //}
 
                     if (position == "RB")
                     {
-                        //PlayerSeason currentrow = new PlayerSeason();
-                        //currentrow.Player = xlRange.Cells.Value2[x, 2].ToString();
-                        //currentrow.PassingYards = xlRange.Cells.Value2[x, 11];
-                        //currentrow.RushingYards = xlRange.Cells.Value2[x, 15];
-                        //currentrow.Position = xlRange.Cells.Value2[x, 22].ToString();
 
                         if (runningbacksList.ContainsKey(currentrow.Player))
                         {
@@ -67,16 +59,10 @@ namespace NFL_try2
                             runningbacksList.Add(currentrow.Player, currentrow);
                         }
 
-                        //Console.WriteLine("player {0}, position {1} ", currentrow.Player, currentrow.Position);
                     }
 
                     if (position == "QB")
                     {
-                        //PlayerSeason currentrow = new PlayerSeason();
-                        //currentrow.Player = xlRange.Cells.Value2[x, 2].ToString();
-                        //currentrow.PassingYards = xlRange.Cells.Value2[x, 11];
-                        //currentrow.RushingYards = xlRange.Cells.Value2[x, 15];
-                        //currentrow.Position = xlRange.Cells.Value2[x, 22].ToString();
 
                         if (quarterbacksList.ContainsKey(currentrow.Player))
                         {
@@ -101,23 +87,14 @@ namespace NFL_try2
 
             //}
 
-            //watch.Stop();
-            //var elapsedMs = watch.ElapsedMilliseconds;
-
             string bestRB = runningbacksList.OrderByDescending(s => s.Value.RushingYards).First().Key;
             Console.WriteLine("The best running back is \t{0}, yards {1:0,0} ", bestRB, runningbacksList[bestRB].RushingYards);
 
             string bestQB = quarterbacksList.OrderByDescending(s => s.Value.PassingYards).First().Key;
             Console.WriteLine("The best quarter back is \t{0}, yards {1:0,0} ", bestQB, quarterbacksList[bestQB].PassingYards);
 
-            //Console.WriteLine("elapsed time: \t{0}", elapsedMs);
             TimeSpan timeItTook = DateTime.Now - start;
             Console.WriteLine("elapsed time: \t{0}", timeItTook);
-
-
-            //List<PlayerSeason> playerList = new List<PlayerSeason>();
-            //playerList.Add(row1);
-            //playerList.Add(row2);
 
 
             Console.ReadKey(); 
